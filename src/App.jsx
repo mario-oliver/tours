@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Tours from './Tours';
+import Loading from './Loading';
 
 const url = 'https://course-api.com/react-tours-project';
 
@@ -27,11 +28,18 @@ const App = () => {
     fetchTours();
   }, []);
 
+  if (isLoading) {
+    return (
+      <main>
+        <Loading></Loading>
+      </main>
+    );
+  }
+
   return (
-    <div>
-      <h2>Tours Starter</h2>
-      {isLoading ? <h2>Loading...</h2> : <Tours tours={tours}></Tours>}
-    </div>
+    <main>
+      <Tours tours={tours}></Tours>
+    </main>
   );
 };
 export default App;

@@ -10,7 +10,7 @@ const QuestionWidget = () => {
   return (
     <section className="container-question">
       <h1>Question and Answers</h1>
-      <p>Multiple answers at a time</p>
+      <p>*Multiple answers at a time</p>
       {questions.map((question) => {
         return <Question key={question.id} {...question}></Question>;
       })}

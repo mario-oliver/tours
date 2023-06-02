@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
-import reviews from '../reviews_data';
+import reviews from '../data/reviews_data';
 import { useState } from 'react';
 
 const Review = () => {

@@ -17,7 +17,7 @@ const App = () => {
           setShowAlternativeQs(!showAlternativeQs);
         }}
       >
-        Show Alternative Functionality for FAQs
+        <h2> Show Alternative Functionality for FAQs</h2>
       </button>
       {showAlternativeQs ? (
         <QuestionWidgetAlt />

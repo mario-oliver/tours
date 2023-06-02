@@ -15,6 +15,7 @@ const QuestionWidget = () => {
   return (
     <section className="container-question">
       <h1>Question and Answers</h1>
+      <p>One answer at a time</p>
       {questions.map((question) => {
         return (
           <QuestionAlt

@@ -5,7 +5,6 @@ import questionsData from '../data/faq_data';
 
 const QuestionWidget = () => {
   const [questions, setQuestions] = useState(questionsData);
-  console.log(questions);
 
   return (
     <section className="container-question">

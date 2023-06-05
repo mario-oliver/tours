@@ -4,12 +4,14 @@ import QuestionWidget from './components/QuestionWidget';
 import QuestionWidgetAlt from './components/QuestionWidgetAlt';
 import { useState } from 'react';
 import MenuWidget from './components/MenuWidget';
+import Jobs from './components/Jobs';
 
 const App = () => {
   const [showAlternativeQs, setShowAlternativeQs] = useState(false);
 
   return (
     <main>
+      <Jobs></Jobs>
       <Tours></Tours>
       <Review></Review>
       <button

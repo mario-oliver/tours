@@ -3,6 +3,7 @@ import Review from './components/Review';
 import QuestionWidget from './components/QuestionWidget';
 import QuestionWidgetAlt from './components/QuestionWidgetAlt';
 import { useState } from 'react';
+import MenuWidget from './components/MenuWidget';
 
 const App = () => {
   const [showAlternativeQs, setShowAlternativeQs] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
       ) : (
         <QuestionWidget></QuestionWidget>
       )}
+      <MenuWidget></MenuWidget>
     </main>
   );
 };

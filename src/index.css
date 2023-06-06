@@ -670,7 +670,6 @@ body {
 }
 
 /* ============= CAROUSEL CSS =============== */
-
 .slider-container {
   margin: 0 auto;
   margin-top: 10rem;
@@ -689,7 +688,7 @@ body {
   height: 100%;
   transition: var(--transition);
 }
-.person-img {
+.carousel-person-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -699,24 +698,24 @@ body {
   box-shadow: var(--shadow-3);
 }
 
-.name {
+.carousel-name {
   text-transform: uppercase;
   color: var(--primary-500);
   margin-bottom: 0.75rem;
 }
-.title {
+.carousel-title {
   text-transform: capitalize;
   color: var(--grey-700);
   margin-bottom: 0.75rem;
 }
-.text {
+.carousel-text {
   max-width: 35em;
   margin: 0 auto;
   margin-top: 2rem;
   line-height: 2;
   color: var(--grey-500);
 }
-.icon {
+.carousel-icon {
   font-size: 3rem;
   margin-top: 1rem;
   color: var(--primary-500);
@@ -747,7 +746,7 @@ body {
   right: 0;
 }
 @media screen and (min-width: 800px) {
-  .text {
+  .carousel-text {
     max-width: 45em;
   }
   .prev,

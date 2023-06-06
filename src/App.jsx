@@ -5,12 +5,14 @@ import QuestionWidgetAlt from './components/QuestionWidgetAlt';
 import { useState } from 'react';
 import MenuWidget from './components/MenuWidget';
 import Jobs from './components/Jobs';
+import Carousel from './components/Carousel';
 
 const App = () => {
   const [showAlternativeQs, setShowAlternativeQs] = useState(false);
 
   return (
     <main>
+      <Carousel></Carousel>
       <Jobs></Jobs>
       <Tours></Tours>
       <Review></Review>

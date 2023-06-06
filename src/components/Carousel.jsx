@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { longList, shortList, list } from '../data/carousel_data';
 import { FaQuoteRight } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
@@ -19,6 +19,19 @@ const Carousel = () => {
       return result;
     });
   };
+
+  //automatically have the slider shift to the next slide
+  //add the currPersonIndex as a dependency so the useEffect knows when to render
+  //add a clean up function - otherwise, every click (with the currPersonIndex dependency) will cause another useInterval() item to be added to the browser
+  //clean up function calls JS clearInterval() function and passes the Id of the setInterval() function we created originally
+  useEffect(() => {
+    let intervalId = setInterval(() => {
+      nextSlide();
+    }, 2500);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currPersonIndex]);
 
   return (
     <section className="slider-container">
